@@ -31,10 +31,10 @@ const WelcomeScreen = ({ onStart, onViewHistory }: Props) => (
         🛡️
       </motion.div>
       <h1 className="text-2xl font-semibold tracking-tight text-balance text-foreground">
-        Are You Ready to Share Your Identity?
+        Finding Your Right Time
       </h1>
       <p className="text-base leading-relaxed text-foreground/90 text-justify hyphens-auto">
-        Coming out is a deeply personal decision. This space helps you reflect on your situation so you can choose what feels safest and right for you.
+        A space to reflect on what feels safe and right for you.
       </p>
       <p className="text-sm text-muted-foreground">⏱ Takes about 3–4 minutes</p>
     </div>
