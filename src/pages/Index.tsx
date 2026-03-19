@@ -163,7 +163,7 @@ const Index = () => {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+            transition={{ duration: 0.55, ease: [0.4, 0, 0.2, 1] }}
             className="w-full flex flex-col items-center flex-1"
           >
             {screens[screen]}
