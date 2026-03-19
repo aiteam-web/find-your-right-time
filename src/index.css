@@ -7,6 +7,11 @@
 @layer base {
   :root {
     --background: 40 20% 98%;
+    --bg-pride-1: 265 70% 96%;
+    --bg-pride-2: 350 70% 96%;
+    --bg-pride-3: 200 60% 95%;
+    --bg-pride-4: 25 70% 95%;
+    --bg-pride-5: 150 45% 95%;
     --foreground: 240 3% 23%;
 
     --card: 0 0% 100%;
@@ -63,7 +68,17 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply text-foreground font-sans antialiased;
     font-family: 'Instrument Sans', sans-serif;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--bg-pride-1)) 0%,
+      hsl(var(--bg-pride-2)) 25%,
+      hsl(var(--bg-pride-3)) 50%,
+      hsl(var(--bg-pride-4)) 75%,
+      hsl(var(--bg-pride-5)) 100%
+    );
+    background-attachment: fixed;
+    min-height: 100svh;
   }
 }
