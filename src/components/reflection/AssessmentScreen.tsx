@@ -59,7 +59,7 @@ const OptionButton = ({
     whileTap={{ scale: 0.97 }}
     onClick={onClick}
     className={`w-full py-4 px-6 rounded-2xl text-left font-medium transition-all duration-200 shadow-card ${
-      selected ? activeColorMap[color] : "bg-card hover:shadow-soft"
+      selected ? "bg-secondary ring-2 ring-primary/30" : "bg-card hover:shadow-soft"
     }`}
   >
     {label}

@@ -153,7 +153,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-svh bg-background flex flex-col items-center justify-center overflow-hidden">
+    <div className="min-h-svh flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full max-w-md mx-auto px-6 py-12 flex flex-col items-center min-h-svh relative">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
