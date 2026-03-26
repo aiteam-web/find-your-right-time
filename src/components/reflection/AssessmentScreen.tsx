@@ -108,7 +108,7 @@ const AssessmentScreen = ({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className={`w-full p-6 rounded-3xl ${colorMap[bgColor]}/50 space-y-4`}
+          className="w-full p-6 rounded-3xl bg-card/70 backdrop-blur-sm shadow-card space-y-4"
         >
           <p className="text-lg font-semibold text-foreground text-center text-balance">
             {q2}
