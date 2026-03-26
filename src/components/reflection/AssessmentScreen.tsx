@@ -59,7 +59,7 @@ const OptionButton = ({
     whileTap={{ scale: 0.97 }}
     onClick={onClick}
     className={`w-full py-4 px-6 rounded-2xl text-left font-medium transition-all duration-200 shadow-card ${
-      selected ? activeColorMap[color] : "bg-card hover:shadow-soft"
+      selected ? "bg-secondary ring-2 ring-primary/30" : "bg-card hover:shadow-soft"
     }`}
   >
     {label}
@@ -86,7 +86,7 @@ const AssessmentScreen = ({
     <div className="flex flex-col items-center flex-1 w-full space-y-6">
       <ProgressDots step={step} total={totalSteps} />
 
-      <div className={`w-full p-6 rounded-3xl ${colorMap[bgColor]}/50 space-y-4`}>
+      <div className="w-full p-6 rounded-3xl bg-card/70 backdrop-blur-sm shadow-card space-y-4">
         <p className="text-lg font-semibold text-foreground text-center text-balance">
           {q1}
         </p>
@@ -108,7 +108,7 @@ const AssessmentScreen = ({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className={`w-full p-6 rounded-3xl ${colorMap[bgColor]}/50 space-y-4`}
+          className="w-full p-6 rounded-3xl bg-card/70 backdrop-blur-sm shadow-card space-y-4"
         >
           <p className="text-lg font-semibold text-foreground text-center text-balance">
             {q2}
