@@ -86,7 +86,7 @@ const AssessmentScreen = ({
     <div className="flex flex-col items-center flex-1 w-full space-y-6">
       <ProgressDots step={step} total={totalSteps} />
 
-      <div className={`w-full p-6 rounded-3xl ${colorMap[bgColor]}/50 space-y-4`}>
+      <div className="w-full p-6 rounded-3xl bg-card/70 backdrop-blur-sm shadow-card space-y-4">
         <p className="text-lg font-semibold text-foreground text-center text-balance">
           {q1}
         </p>
